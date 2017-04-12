@@ -1,7 +1,25 @@
-* { font-family:'Lato', sans-serif; color:#666; font-weight:300; }
+/* apply a natural box layout model to all elements, but allowing components to change */
+html { box-sizing:border-box;}
+*,*:before; *:after {box-sizing:inherit;}
 
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|PT+Sans');
+
+* { font-family:'Lato', sans-serif; color:#666; font-weight:300; background:url('../img/cityview.jpg') no-repeat fixed; background-size:cover; }
+body { margin:0; padding: 0; font-family: 'PT Sans', sans-serif;}
+h1,h2,h3,h4,h5,h6 { font-family:'Merriweather', serif; margin:0; font-weight:normal;}
 h1 { font-weight:100; }
 h2 { font-weight:300; color:#ccc; text-align:center; }
 h3,h4 { font-weight:300; }
+a { text-decoration:none; font-weight:bold; }
+a:hover {text-decoration:underline;}
 
 .navbar { background:#fff; border:0;}
+
+header { background:rgba(0,180,204,1); color:rgb(52,56,56);}
+
+#featured { background:rgba(0,140,158,0.80); color:rgb(52,56,56);}
+
+#about { background:rgba(0,95,107,0.80); color:rgb(0,223,252);}
+
+#contact { background:rgba(52,56,56,0.70); color:rgb(0,223,252);}
